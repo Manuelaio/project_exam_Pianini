@@ -1,4 +1,17 @@
 language: python
 
 scritp:
-  -python Digital_epidemiology.py
+  - "3.6"
+  
+cache: pip
+  
+before_install: 
+  - python --version
+  - pip install -U pip
+
+install:
+  - pip install -r requirments.txt
+  
+script:
+  - python Digital_epidemiology.py
+
