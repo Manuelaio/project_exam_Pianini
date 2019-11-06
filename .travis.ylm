@@ -1,17 +1,22 @@
 language: python
 
-script:
+os:
+  - windows
+  - linux
+  - osx
+
+python:
+  - "2.7"
   - "3.6"
   
 cache: pip
-  
-before_install: 
+
+before_install:
   - python --version
   - pip install -U pip
-
+  
 install:
   - pip install -r requirements.txt
-  
-script:
-  - python Digital_epidemiology.py
 
+script:
+  - python DigitalEpidemiology.py
