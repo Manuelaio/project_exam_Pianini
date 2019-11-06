@@ -1,6 +1,6 @@
 language: python
 
-scritp:
+script:
   - "3.6"
   
 cache: pip
